@@ -1,0 +1,16 @@
+<template name="projectItem">
+<div class="project_item">
+    <article>
+        <img src="{{image}}">
+    </article>
+
+    <aside>
+        <h1>{{title}}</h1>
+        <p>{{desc}}</p>
+        {{#each tags}}
+            <span class="tagblock">{{this}}</span>
+        {{/each}}
+    </aside>
+</div>
+
+</template>

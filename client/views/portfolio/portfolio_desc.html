@@ -1,0 +1,31 @@
+<template name="portfolioDescView">
+    <div class="container top bottom">
+        <div class="portfolio_desc">
+            <aside>
+
+
+
+            <h1>{{title}}</h1>
+
+            {{#each tags}}
+                <span class="tagblock">{{this}}</span>
+            {{/each}}
+
+
+            <p>{{desc}}</p>
+            <p>{{_id}}</p>
+            </aside>
+
+            <article>
+                <img src="{{image}}">
+                <div>
+                    <img src="{{image2}}">
+                </div>
+                <div>
+                    <img src="{{image3}}">
+                </div>
+            </article>
+        </div>
+    </div>
+
+</template>
