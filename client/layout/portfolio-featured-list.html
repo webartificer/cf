@@ -1,0 +1,10 @@
+<template name="portfolioFeaturedList">
+    <div class="container bottom">
+
+        {{#each folio}}
+            {{#if status}}
+                {{> portfolioItem}}
+            {{/if}}
+        {{/each}}
+    </div>
+</template>

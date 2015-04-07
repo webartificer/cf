@@ -1,19 +1,23 @@
 <template name="portfolioDescView">
     <div class="container top bottom">
         <div class="portfolio_desc">
+            <div class="breadcrumbs">
+                <a href="{{pathFor 'portfolio.view'}}"><i class="fa fa-picture-o"></i> Portfolio</a> <i class="fa fa-chevron-right"></i> {{title}}
+            </div>
             <aside>
 
 
 
             <h1>{{title}}</h1>
 
-            {{#each tags}}
-                <span class="tagblock">{{this}}</span>
-            {{/each}}
 
 
             <p>{{desc}}</p>
-            <p>{{_id}}</p>
+
+            {{#each tags}}
+                <span class="tagblock"><i class="fa fa-tag"></i>{{this}}</span>
+            {{/each}}
+
             </aside>
 
             <article>
@@ -25,7 +29,9 @@
                     <img src="{{image3}}">
                 </div>
             </article>
+
         </div>
+
     </div>
 
 </template>
